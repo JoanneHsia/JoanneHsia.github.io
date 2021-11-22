@@ -3,12 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <title>Hello</title>
+
+<script
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("p").hide();
+        $("button").click(function(){
+            $("p").slideToggle(1000);
+        });
+    });
+</script>
 </head>
 <body style="background-color: #fff8d3;">
-    <div style="background-color: #fff8d3; text-align: center;"><h1><em><strong>About Me</strong></em></h1>
     
+    <div style="background-color: #fff8d3; text-align: center;"><h1><em><strong>About Me</strong></em></h1>
     <hr></hr>
+    
     <img src="me.jpg" width="13%" style="border:6px #9b9797 solid;padding:0px;">
+
+    <div style="text-align: center;">
+        <button style="background-color: azure;">Click</button>
+    </div>
+    
     <p><strong>姓名：</strong>夏珮瑄</p>
     <p><strong>科系：</strong>醫學資訊與創新應用學士學位學程</p>
     <p><strong>興趣：</strong>♪ 學樂器 ♪</p>
